@@ -1,0 +1,36 @@
+#root,body {
+  
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header{
+  background-color: rgb(179, 179, 89);
+  padding:20px;
+  display:flex;
+} 
+.layout{
+  display: flex;
+
+  flex:1;
+}
+.footer{
+  padding:20px;
+  text-align: center;
+
+}
+.main{
+  background-color: rgb(219, 200, 219);
+  padding:20px;
+  text-align: center;
+  flex:1;
+}
+.sidebar{
+  width:20%;
+}
+
