@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function replaceSpacesWithUnderscore(text) {
+            const result = text.replace(/ /g, "_");
+            return result;
+        }
+        const input = prompt("Enter Sentence :");
+        console.log("User Input :", input);
+        console.log("Updated :", replaceSpacesWithUnderscore(input));
+
+    </script>
+</body>
+
+</html>
