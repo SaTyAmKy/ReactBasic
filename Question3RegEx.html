@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getAllDigits(text){
+            const digit = text.match(/\d/g);
+            return digit || [];
+        }
+        const userInput = prompt("Enter Sentence");
+        console.log("UserInput",userInput);
+        console.log("All digits",getAllDigits(userInput));
+    </script>
+</body>
+</html>
