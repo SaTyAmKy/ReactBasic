@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        function strongPassWord(text){
+            // const check = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\W){8,}/;
+           let message = [];
+
+           if(text.length < 8){
+            console.log("Password Must contains at least 8 caharacter.");
+            
+           }
+           if(!/[a-z]/.test(text)){
+            console.log("Password must contains lowerCase character at least once.");
+            
+           }
+           if(!/[A-Z]/.test(text)){
+            console.log("Password must contains UpperCase character at least once.");
+            
+           }
+           if(!/\W/.test(text)){
+             console.log("Password must contains Non-Word character at least once.");
+           }
+           if(!/\d/.test(text)){
+            console.log("Password must contains  at least one number.");
+           }
+           if(message.length === 0){
+            console.log("Stroong password");
+            
+
+           }
+           else{
+            console.log("Your password is weak");
+            
+           }
+           
+
+        }
+        const userInput = prompt("Enter sentence :");
+        console.log("User Input :",userInput);
+        strongPassWord(userInput);
+        
+    </Script>
+</body>
+</html>
